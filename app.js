@@ -5,6 +5,17 @@ const commands = global.commands = new Map();
 const fs = require('fs');
 const chalk = require('chalk');
 
+/*
+*
+* Sitemizde paylaştığımız main dosyadaki kodları buraya yapıştırabilirsiniz.
+*
+*/
+
+
+
+
+
+
 console.log(chalk.blue(`━━━━━━━━━━━━━━━━━━━KOMUTLAR YÜKLENİYOR━━━━━━━━━━━━━━━━━━━`));
 fs.readdirSync('./src/commands', { encoding: "utf-8" }).sort().filter(file => file.endsWith(".js")).forEach((file) => {
   let command = require(`./src/commands/${file}`);
@@ -24,4 +35,4 @@ fs.readdirSync('./src/events', { encoding: "utf-8" }).sort().filter(file => file
 client.login(settings.bot.token).catch(async err => { 
   await console.log(chalk.red(`[BOT] Token yanlış veya yeniden oluşturulmuş.`));
   await process.exit();
- });
+});
