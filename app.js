@@ -5,15 +5,12 @@ const commands = global.commands = new Map();
 const fs = require('fs');
 const chalk = require('chalk');
 
+
 /*
 *
 * Sitemizde paylaştığımız main dosyadaki kodları buraya yapıştırabilirsiniz.
 *
 */
-
-
-
-
 
 
 console.log(chalk.blue(`━━━━━━━━━━━━━━━━━━━KOMUTLAR YÜKLENİYOR━━━━━━━━━━━━━━━━━━━`));
